@@ -16,9 +16,7 @@ LOCAL_CFLAGS :=	\
 # We move them from global build/core/combo/TARGET_linux-arm.mk
 # to here.
 LOCAL_CFLAGS := -DANDROID_TARGET_BUILD \
-		-finline-limit=64 \
 		-finline-functions \
-		-fno-inline-functions-called-once \
 		$(LOCAL_CFLAGS)
 
 ifeq ($(TARGET_BUILD_VARIANT),eng)
